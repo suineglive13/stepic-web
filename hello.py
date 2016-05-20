@@ -6,5 +6,5 @@ def app(environ, start_response):
           ("Content-Type", "text/plain"),
           ("Content-Length", str(len(body)))
   ]
-  start_response(ststus, headers)
+  start_response(status, headers)
   return iter([body])
